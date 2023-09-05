@@ -219,3 +219,87 @@ for collection in collections{
 let date: Date = .now
 print(date)
 print(date + 5)
+
+func sendEmail(name: String) -> Bool {
+    print(name)
+    return true
+}
+
+
+let send = sendEmail(name: "Sergey")
+print(send)
+
+var email: (String) -> String
+
+func email2(name: String) -> String {
+    let a: String = "test" + name
+    print(name)
+    return a
+}
+
+func email3(test: String) -> String {
+    let a: String = test + " other "
+    return a
+}
+
+email = email2
+email = email3
+
+let hhh = email("ttt")
+print(hhh)
+
+
+let sound: (String) -> (String) = { test in
+    return test + " sound"
+}
+
+sound("hey")
+
+
+
+func sendEmail2(name: String, lastName: (String) -> String) -> Bool {
+    let ghghj = lastName("gghhyhu")
+    print(name + ghghj)
+    return true
+}
+
+let call = sendEmail2(name: "fggs", lastName: email )
+print(call)
+
+let call2 = sendEmail2(name: "fggs", lastName: { test in
+    return test
+}
+)
+ print (call2)
+
+////
+func sendEmail(openURL: String, completion: @escaping (Bool) -> ()) {
+
+  let accepted = true
+    completion (accepted)
+   // }
+}
+
+sendEmail(openURL: "das", completion: { result in
+    //
+})
+
+sendEmail(openURL: "das") { result in
+    //
+}
+
+func openUrl(_ url: String, completion: @escaping (Bool) -> ()) {
+//    if ...
+//    completion (true)
+//        else
+//        completion (false)
+}
+
+func ttt(number: Bool) -> Int {
+    let a: Int = 1
+    return a
+}
+
+let asd = ttt(number: false)
+
+
