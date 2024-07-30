@@ -12,6 +12,7 @@
 		B51391CE2C58005A000CCBC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51391CD2C58005A000CCBC5 /* Assets.xcassets */; };
 		B51391D12C58005A000CCBC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51391D02C58005A000CCBC5 /* Preview Assets.xcassets */; };
 		B51391D82C58007C000CCBC5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51391D72C58007C000CCBC5 /* User.swift */; };
+		B51391DA2C58F1BD000CCBC5 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51391D92C58F1BD000CCBC5 /* UsersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		B51391CD2C58005A000CCBC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51391D02C58005A000CCBC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B51391D72C58007C000CCBC5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B51391D92C58F1BD000CCBC5 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				B51391C92C580057000CCBC5 /* FilteringQueryUsingPredicateApp.swift */,
 				B51391CB2C580057000CCBC5 /* ContentView.swift */,
+				B51391D92C58F1BD000CCBC5 /* UsersView.swift */,
 				B51391D72C58007C000CCBC5 /* User.swift */,
 				B51391CD2C58005A000CCBC5 /* Assets.xcassets */,
 				B51391CF2C58005A000CCBC5 /* Preview Content */,
@@ -143,6 +146,7 @@
 				B51391CC2C580057000CCBC5 /* ContentView.swift in Sources */,
 				B51391CA2C580057000CCBC5 /* FilteringQueryUsingPredicateApp.swift in Sources */,
 				B51391D82C58007C000CCBC5 /* User.swift in Sources */,
+				B51391DA2C58F1BD000CCBC5 /* UsersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
