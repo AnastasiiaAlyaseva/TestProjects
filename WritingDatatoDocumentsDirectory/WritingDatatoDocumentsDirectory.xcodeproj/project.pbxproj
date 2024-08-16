@@ -11,6 +11,7 @@
 		B55EDAD12C6F877A001AA21E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55EDAD02C6F877A001AA21E /* ContentView.swift */; };
 		B55EDAD32C6F877D001AA21E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55EDAD22C6F877D001AA21E /* Assets.xcassets */; };
 		B55EDAD62C6F877D001AA21E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55EDAD52C6F877D001AA21E /* Preview Assets.xcassets */; };
+		B55EDADD2C6F9F17001AA21E /* Challange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55EDADC2C6F9F17001AA21E /* Challange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B55EDAD02C6F877A001AA21E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B55EDAD22C6F877D001AA21E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B55EDAD52C6F877D001AA21E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B55EDADC2C6F9F17001AA21E /* Challange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				B55EDACE2C6F877A001AA21E /* WritingDatatoDocumentsDirectoryApp.swift */,
 				B55EDAD02C6F877A001AA21E /* ContentView.swift */,
+				B55EDADC2C6F9F17001AA21E /* Challange.swift */,
 				B55EDAD22C6F877D001AA21E /* Assets.xcassets */,
 				B55EDAD42C6F877D001AA21E /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B55EDAD12C6F877A001AA21E /* ContentView.swift in Sources */,
+				B55EDADD2C6F9F17001AA21E /* Challange.swift in Sources */,
 				B55EDACF2C6F877A001AA21E /* WritingDatatoDocumentsDirectoryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
