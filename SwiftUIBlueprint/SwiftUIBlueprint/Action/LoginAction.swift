@@ -9,7 +9,7 @@ struct LoginAction {
     func call(completion: @escaping (LoginResponse) -> Void) {
         
         let scheme: String = "https"
-        let host: String = "base_url"
+        let host: String = "7eedd55e-c7b7-4bfe-b95c-8af6ff17cf5a.mock.pstmn.io"
         let path = "/login"
         
         var components = URLComponents()
@@ -22,8 +22,9 @@ struct LoginAction {
         var request = URLRequest(url: url)
         request.httpMethod = "post"
         
-        request.addValue("application/jsom", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.addValue("true", forHTTPHeaderField: "x-mock-match-request-body")
         
         
         do{

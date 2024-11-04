@@ -12,14 +12,14 @@ struct LoginScreen: View {
             Spacer()
             
             VStack {
-                TextField("UsernameField", text: $viewModel.username)
+                TextField("Username", text: $viewModel.username)
                     .autocapitalization(.none)
                     .disableAutocorrection(true)
                     .padding(.top, 20)
                 
                 Divider()
                 
-                SecureField("PasswordField", text: $viewModel.password)
+                SecureField("Password", text: $viewModel.password)
                     .padding(.top, 20)
                 
                 Divider()
@@ -29,7 +29,7 @@ struct LoginScreen: View {
             Button(
                 action: viewModel.login,
                 label: {
-                    Text("LoginButton")
+                    Text("Login")
                         .font(.system(size: 24, weight: .bold, design: .default))
                         .frame(maxWidth: .infinity, maxHeight: 60)
                         .foregroundColor(Color.white)
