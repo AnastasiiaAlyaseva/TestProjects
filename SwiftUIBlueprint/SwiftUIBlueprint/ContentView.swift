@@ -4,9 +4,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            LoginScreen()
-        }
+        RootScreen()
+            .environmentObject(Auth.shared)
     }
 }
 
