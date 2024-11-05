@@ -26,6 +26,19 @@ struct LoginScreen: View {
             }
             Spacer()
             
+            
+            if viewModel.error == .noInternet {
+                Text("No internet")
+                    .fontWeight(.bold)
+                    .foregroundColor(.red)
+            } else if viewModel.error != nil {
+                Text("Login error")
+                    .fontWeight(.bold)
+                    .foregroundColor(.red)
+            }
+            
+            Spacer()
+            
             Button(
                 action: viewModel.login,
                 label: {

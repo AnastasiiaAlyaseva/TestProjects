@@ -3,6 +3,10 @@
 import Foundation
 
 typealias CompletionHandler = (Data) -> Void
+typealias FailureHandler = (APIError) -> Void
+
+struct EmptyRequest: Encodable {}
+struct EmptyResponse: Decodable {}
 
 enum HTTPMethod: String {
     case get, put, post, delete
@@ -15,13 +19,24 @@ class APIRequest<Parameters: Encodable, Model: Decodable> {
         host: String = Config.shared.host,
         path: String,
         method: HTTPMethod,
+//        authorized: Bool,
+//        queryItem: [URLQueryItem]? = nil,
         parameters: Parameters? = nil,
-        completion: @escaping CompletionHandler) {
+        completion: @escaping CompletionHandler,
+        failure: @escaping FailureHandler) {
+            
+            if !NetworkMonitor.shared.isReachable {
+                return failure(.noInternet)
+            }
             
             var components = URLComponents()
             components.scheme = scheme
             components.host = host
             components.path = path
+            
+//            if let queryItem = queryItem {
+//                components.queryItems = queryItem
+//            }
             
             guard let url = components.url else { return }
             
@@ -40,8 +55,8 @@ class APIRequest<Parameters: Encodable, Model: Decodable> {
                 if let data = data {
                     completion(data)
                 } else {
-                    if let error = error {
-                        print("Error: \(error.localizedDescription)")
+                    if error != nil {
+                        failure(APIError.response)
                     }
                 }
             }
