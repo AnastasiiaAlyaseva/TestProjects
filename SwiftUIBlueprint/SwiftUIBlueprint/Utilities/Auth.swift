@@ -24,7 +24,10 @@ class Auth: ObservableObject {
         keychain.set(accessToken, forKey: KeychainKey.accessToken.rawValue)
         keychain.set(refreshToken, forKey: KeychainKey.refreshToken.rawValue)
         
-        loggedIn = true
+        DispatchQueue.main.async {
+            self.loggedIn = true
+        }
+        
     }
     
     func hasAccessToken() -> Bool {
@@ -43,7 +46,9 @@ class Auth: ObservableObject {
         KeychainWrapper.standard.removeObject(forKey: KeychainKey.accessToken.rawValue)
         KeychainWrapper.standard.removeObject(forKey: KeychainKey.refreshToken.rawValue)
         
-        loggedIn = false
+        DispatchQueue.main.async {
+            self.loggedIn = false
+        }
     }
     
 }
