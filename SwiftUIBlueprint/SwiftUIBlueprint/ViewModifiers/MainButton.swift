@@ -1,7 +1,6 @@
 
 
-import Foundation
-
+import SwiftUI
 
 struct MainButton: ViewModifier {
     var color: Color = Color.blue
@@ -15,3 +14,4 @@ struct MainButton: ViewModifier {
             .cornerRadius(10)
     }
 }
+

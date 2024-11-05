@@ -18,11 +18,7 @@ struct HomeScreen: View {
                 action: viewModel.logout,
                 label: {
                     Text("Logout")
-                        .font(.system(size: 24, weight: .bold, design: .default))
-                        .frame(maxWidth: .infinity, maxHeight: 60)
-                        .foregroundColor(.white)
-                        .background(.green)
-                        .cornerRadius(10)
+                        .modifier(MainButton(color: Color.green))
                 }
             )
         }

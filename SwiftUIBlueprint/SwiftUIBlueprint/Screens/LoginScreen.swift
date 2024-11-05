@@ -30,11 +30,7 @@ struct LoginScreen: View {
                 action: viewModel.login,
                 label: {
                     Text("Login")
-                        .font(.system(size: 24, weight: .bold, design: .default))
-                        .frame(maxWidth: .infinity, maxHeight: 60)
-                        .foregroundColor(Color.white)
-                        .background(Color.blue)
-                        .cornerRadius(10)
+                        .modifier(MainButton())
                 }
             )
         }
